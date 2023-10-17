@@ -20,6 +20,7 @@ router.get('/', (req, res) => {
   });
 });
 
+// Get specific category
 router.get('/:id', (req, res) => {
   Category.findOne({
     where: {
